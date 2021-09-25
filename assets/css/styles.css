@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 142; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -197,7 +197,9 @@ img{
 
 
 .nav__logo,
-.nav__toggle{
+.nav__toggle,
+.options,
+.option{
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
@@ -316,15 +318,10 @@ img{
 }
 
 
-.home__blob{
-    width: 200px;
-    fill: var(--first-color);
-}
 
 
-.home__blob-img{
-    width: 170px;
-}
+
+
 
 
 .home__data{
@@ -395,6 +392,7 @@ img{
     padding: 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
 }
 
 .button:hover{
@@ -440,6 +438,14 @@ img{
 .button--white:hover{
     background-color: #FFF;
 }
+
+.lang{
+    margin: var(--mb-0-5);
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
 
 
 
@@ -1241,9 +1247,7 @@ img{
 
 @media screen and (min-width: 568px) {
 
-    .home__content{
-        grid-template-columns: max-content 1fr 1fr;
-    }
+
     .home__data{
         grid-column: initial;
     }

@@ -1501,3 +1501,11 @@ img{
 
 
 }
+
+@media screen and (max-width: 366px) {
+
+    .home__title{
+        font-size: 1.8rem;
+    }
+    
+}
